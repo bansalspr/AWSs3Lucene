@@ -51,7 +51,7 @@ public class TestDemo1 {
         final String text4 = "company in india";
 
         try (IndexWriter writer = new IndexWriter(directory, config)) {
-            for (int i = 1; i <= 500; i++) {
+            for (int i = 1; i <= 100; i++) {
                 final Document doc = new Document();
                 if (i <= 200) {
                     doc.add(new Field("odd_field", text1, TextField.TYPE_NOT_STORED));
